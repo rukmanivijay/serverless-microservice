@@ -1,4 +1,4 @@
-# LevelUp! Lab for Serverless
+# AWS Serverless microservice application using API GW, DynamoDb and Lambda
 
 ## Lab Overview And High Level Design
 
