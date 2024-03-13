@@ -287,6 +287,18 @@ In this step, you deploy the API that you created to a stage called prod.
 
 We have successfully created a serverless API using API Gateway, Lambda, and DynamoDB!
 
+## Performance test using Postman
+1. Install native desktop version postman tool and sign in to an account.
+2. Create new collection and post method.
+3. Run collection in performance test mode
+   ![Delete Dynamo](./images/1710190798610.png)
+
+4. Below is the report for the average response time and error rate where the configuration for Lambda function was 128 MB Memory and 10 sec time out.
+    ![Delete Dynamo](./images/1710191216864.png)
+
+5. Then I updated the Lambda configuration by increasing 1024 MB Memory and 10 sec time out and now if I run the performance test you can see the average response time is 283 ms (decreased) as per below performance report.
+    ![Delete Dynamo](./images/1710191747521.png)
+
 ## Cleanup
 
 Let's clean up the resources we have created for this lab.
@@ -296,12 +308,12 @@ Let's clean up the resources we have created for this lab.
 
 To delete the table, from DynamoDB console, select the table "lambda-apigateway", and click "Delete table"
 
-![Delete Dynamo](./images/delete-dynamo.jpg)
+![Delete Dynamo](./images/delete-table-1.jpg)
 
 To delete the Lambda, from the Lambda console, select lambda "LambdaFunctionOverHttps", click "Actions", then click Delete 
 
-![Delete Lambda](./images/delete-lambda.jpg)
+![Delete Lambda](./images/delete-table-2.jpg)
 
 To delete the API we created, in API gateway console, under APIs, select "DynamoDBOperations" API, click "Actions", then "Delete"
 
-![Delete API](./images/delete-api.jpg)
+![Delete API](./images/delete-table-3.jpg)
