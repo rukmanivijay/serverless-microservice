@@ -215,7 +215,7 @@ Click "Actions", then click "Create Resource"
 
 ![Create resource](./images/create-resource-name.jpg)
 
-7. Let's create a POST Method for our API. With the "/dynamodbmanager" resource selected, Click "Actions" again and click "Create Method". 
+7. Let's create a POST Method for our API. With the "/dynamodbmanager" resource selected, Click "Create Method". 
 
 ![Create resource method](./images/create-method-1.jpg)
 
