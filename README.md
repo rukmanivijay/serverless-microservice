@@ -217,11 +217,11 @@ Click "Actions", then click "Create Resource"
 
 7. Let's create a POST Method for our API. With the "/dynamodbmanager" resource selected, Click "Create Method". 
 
-![Create resource method](./images/create-method-1.jpg)
+![Create resource method](./images/create-method0.jpg.png)
 
 8. Select "POST" from drop down , then click checkmark
 
-![Create resource method](./images/create-method-2.jpg)
+![Create resource method](./images/method-details.jpg)
 
 9. The integration will come up automatically with "Lambda Function" option selected. Select "LambdaFunctionOverHttps" function that we created earlier. As you start typing the name, your function name will show up.Select and click "Save". A popup window will come up to add resource policy to the lambda to be invoked by this API. Click "Ok"
 
