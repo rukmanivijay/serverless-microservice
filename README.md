@@ -151,7 +151,7 @@ def lambda_handler(event, context):
 ### Test Lambda Function
 
 Let's test our newly created function. We haven't created DynamoDB and the API yet, so we'll do a sample echo operation. The function should output whatever input we pass.
-1. Click the arrow on "Select a test event" and click "Configure test events"
+1. Click the arrow on "Test" and click "Configure test events"
 
 ![Configure test events](./images/lambda-test-event-create.jpg)
 
