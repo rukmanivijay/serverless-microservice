@@ -49,11 +49,10 @@ Create the execution role that gives your function permission to access AWS reso
 
 To create an execution role
 
-1. Open the roles page in the IAM console.
-2. Choose Create role.
-3. Create a role with the following properties.
-    * Trusted entity – Lambda.
-    * Role name – **lambda-apigateway-role**.
+1. Open the policies page in the IAM console.
+2. Choose Create policy.
+3. Create a policy with the following properties.
+    * Policy name – **lambda-apigateway-dynamodb-policy**.
     * Permissions – Custom policy with permission to DynamoDB and CloudWatch Logs. This custom policy has the permissions that  the function needs to write data to DynamoDB and upload logs. 
     ```json
     {
@@ -85,6 +84,13 @@ To create an execution role
     ]
     }
     ```
+4. Click Create Policy
+5. Select Roles and click "Create Roles"
+6. Select "Trusted entity type" as AWS Service
+7. Select your service as "Lambda"
+8. Select "lambda-apigateway-dynamodb-policy" as your permission policy
+9. Enter role name as "lambda-apigateway-role"
+10. Select, "Create role"
 
 ### Create Lambda Function
 
@@ -93,7 +99,7 @@ To create an execution role
 
 ![Create function](./images/create-lambda.jpg)
 
-2. Select "Author from scratch". Use name **LambdaFunctionOverHttps** , select **Python 3.7** as Runtime. Under Permissions, select "Use an existing role", and select **lambda-apigateway-role** that we created, from the drop down
+2. Select "Author from scratch". Use name **LambdaFunctionOverHttps** , select **Python 3.12** as Runtime. Under Permissions, select **"Use an existing role"**, and select **lambda-apigateway-role** that we created, from the drop down
 
 3. Click "Create function"
 
