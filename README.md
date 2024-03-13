@@ -241,7 +241,7 @@ In this step, you deploy the API that you created to a stage called prod.
 
 3. We're all set to run our solution! To invoke our API endpoint, we need the endpoint url. In the "Stages" screen, expand the stage "Prod", select "POST" method, and copy the "Invoke URL" from screen
 
-![Copy Invoke Url](./images/copy-invoke-url.jpg)
+![Copy Invoke Url](./images/invoke-url.jpg)
 
 
 ### Running our solution
@@ -263,7 +263,7 @@ In this step, you deploy the API that you created to a stage called prod.
 2. To execute our API from local machine, we are going to use Postman and Curl command. You can choose either method based on your convenience and familiarity. 
     * To run this from Postman, select "POST" , paste the API invoke url. Then under "Body" select "raw" and paste the above JSON. Click "Send". API should execute and return "HTTPStatusCode" 200.
 
-    ![Execute from Postman](./images/create-from-postman.jpg)
+    ![Execute from Postman](./images/postman-1.jpg)
 
     * To run this from terminal using Curl, run the below
     ```
